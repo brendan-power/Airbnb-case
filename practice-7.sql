@@ -22,3 +22,4 @@ SELECT listings.property_type, COUNT(*), MAX(reviews.date_reviewed)
 FROM reviews INNER JOIN listings ON listings.id = reviews.listing_id
 GROUP BY listings.property_type;
 
+Tweak
