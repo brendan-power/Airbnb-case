@@ -16,3 +16,11 @@
 -- | Burnside               | 10       |
 
 
+SELECT listings.neighborhood, COUNT(*)
+FROM listings INNER JOIN reviews ON listings.id = reviews.listing_id
+GROUP BY listings.neighborhood;
+
+OK ... the one thing I didn't get here is why, in the second line, it was reviews.listing_id instead of jsut reviews.id
+
+
+
